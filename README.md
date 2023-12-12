@@ -5,8 +5,8 @@ _A ToDo cli app implementation with Rust_
 
 - [x] **C**reate to-do
 - [x] **R**ead to-dos
-- [ ] **U**pdate to-do (rename)
-- [ ] **D**elete to-do
+- [x] **U**pdate to-do (rename)
+- [x] **D**elete to-do
 - [x] Mark as completed
 - [x] Save in a SQLite file
 
