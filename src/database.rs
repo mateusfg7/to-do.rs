@@ -19,7 +19,7 @@ impl Database {
         Self { conn: db }
     }
 
-    pub fn add(&self, title: &str) {
+    pub fn add(&self, title: &String) {
         let id: String = rand::thread_rng()
             .sample_iter(&Alphanumeric)
             .take(6)
@@ -40,7 +40,7 @@ impl Database {
             });
     }
 
-    pub fn complete(&self, index: usize) {
+    pub fn done(&self, index: usize) {
         let target = &self.get_all()[index - 1];
 
         self.conn
