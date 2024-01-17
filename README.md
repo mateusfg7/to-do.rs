@@ -21,3 +21,7 @@ _A ToDo cli app implementation with Rust_
 - [x] Delete todo `d | delete`
 
 
+---
+_note_
+
+Inspire on https://github.com/thekuwayama/todo/tree/main for re-implement using plain-text as database
