@@ -4,9 +4,11 @@
 	"image": "mcr.microsoft.com/devcontainers/rust:0-1-bullseye",
 	"customizations": {
 		"vscode": {
-			"settings": {
+			"settings": { 
 				"files.autoSave": "off",
 				"editor.formatOnSave": true,
+				"workbench.productIconTheme": "fluent-icons",
+				"workbench.iconTheme": "material-icon-theme",
 				"terminal.integrated.defaultProfile.linux": "zsh",
 				"terminal.integrated.profiles.linux": {
 					"zsh": {
