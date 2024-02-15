@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/rust:0-1-bullseye
+FROM mcr.microsoft.com/devcontainers/rust:1-1-bullseye
 
 # Update system
 # RUN sudo apt update && sudo apt upgrade -y
