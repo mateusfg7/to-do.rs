@@ -8,7 +8,11 @@
   },
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+			"omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions https://github.com/zsh-users/zsh-completions https://github.com/zdharma-continuum/fast-syntax-highlighting"
+		}
+	},
 
 	// Configure tool-specific properties.
 	"customizations": {
