@@ -43,22 +43,9 @@ fn main() {
     let cli = Cli::parse();
     let db = Database::new();
 
-    // db.add("Complete CLI App");
-    // db.add("Study Rust+SQLite");
-    // db.add("Review Noisekun PRs");
-    // db.add("Renamed [FALSE]");
-
-    // db.rename(4, "Renamed [TRUE]");
-    // db.complete(2);
-    // db.delete(1);
-    // db.delete(2);
-
     match &cli.command {
         Some(Commands::Add { title }) => {
             db.add(title);
-            db.add(title);
-            db.add(title);
-            db.done(2);
         }
         Some(Commands::List { all, completed }) => {
             if *all {
