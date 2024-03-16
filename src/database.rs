@@ -9,7 +9,7 @@ pub struct Database {
 
 impl Database {
     pub fn new() -> Self {
-        let db = sqlite3::open("./to-do.db")
+        let db = sqlite3::open("./todo.db")
             .unwrap_or_else(|_e| panic!("Problem opening the database file."));
 
         db.execute("    
