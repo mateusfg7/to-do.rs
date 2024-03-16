@@ -12,29 +12,34 @@ struct Cli {
 
 #[derive(Subcommand)]
 enum Commands {
+    #[command(about = "Add a new to-do")]
     Add {
-        #[arg(index = 1)]
+        #[arg(index = 1, help = "The title of the to-do")]
         title: String,
     },
+    #[command(about = "List to-dos")]
     List {
-        #[arg(short, long)]
+        #[arg(short, long, help = "List all to-dos")]
         all: bool,
 
-        #[arg(short, long)]
+        #[arg(short, long, help = "List only completed to-dos")]
         completed: bool,
     },
+    #[command(about = "Mark a to-do as done")]
     Done {
-        #[arg(index = 1)]
+        #[arg(index = 1, help = "The id of the to-do")]
         id: usize,
     },
+    #[command(about = "Delete a to-do")]
     Delete {
-        #[arg(index = 1)]
+        #[arg(index = 1, help = "The id of the to-do")]
         id: usize,
     },
+    #[command(about = "Rename a to-do")]
     Rename {
-        #[arg(index = 1)]
+        #[arg(index = 1, help = "The id of the to-do")]
         id: usize,
-        #[arg(index = 2)]
+        #[arg(index = 2, help = "The new title of the to-do")]
         new_title: String,
     },
 }
