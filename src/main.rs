@@ -31,6 +31,12 @@ enum Commands {
         #[arg(index = 1)]
         id: usize,
     },
+    Rename {
+        #[arg(index = 1)]
+        id: usize,
+        #[arg(index = 2)]
+        new_title: String,
+    },
 }
 
 fn main() {
@@ -101,6 +107,10 @@ fn main() {
         Some(Commands::Delete { id }) => {
             db.delete(*id);
         }
+        Some(Commands::Rename { id, new_title }) => {
+            db.rename(*id, new_title);
+        }
+
         None => {}
     }
 }
